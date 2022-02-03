@@ -1,7 +1,7 @@
 on: 
   pull_request:
     paths:
-      - 'boards/lily59'
+      - 'boards/lily59/**'
 
 name: Build Lily58
 
