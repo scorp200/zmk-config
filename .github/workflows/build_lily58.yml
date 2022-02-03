@@ -4,7 +4,7 @@ on:
       - 'config/boards/lily58/**'
       - '.github/workflows/**lily58'
 
-name: Build Lily58
+name: Build Lily58 pro
 
 jobs:
   build:
