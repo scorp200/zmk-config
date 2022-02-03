@@ -2,7 +2,7 @@ on:
   push:
     paths:
       - 'config/boards/lily58/**'
-      - '.github/workflows/**lily58'
+      - '.github/workflows/build_lily58.yml'
 
 name: Build Lily58 pro
 
