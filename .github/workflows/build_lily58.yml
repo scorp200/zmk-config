@@ -2,6 +2,7 @@ on:
   push:
     paths:
       - 'config/boards/lily58/**'
+      - '.github/workflows/**lily58'
 
 name: Build Lily58
 
