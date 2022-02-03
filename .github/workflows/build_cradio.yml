@@ -1,9 +1,5 @@
-on:
-  push:
-    paths:
-      - 'config/boards/cradio/**'
-      - '.github/workflows/build_cradio.yml'
-name: Build Cradio - Sweep
+on: [push, pull_request, workflow_dispatch]
+name: Build
 
 jobs:
   matrix:
@@ -66,14 +62,14 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
       - name: West Init
-        run: west init -l config/boards/cradio
+        run: west init -l config
       - name: West Update
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
       - name: West Build (${{ steps.variables.outputs.display-name }})
         run: |
-          west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config/boards/cradio ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }}
+          west build -s zmk/app -b ${{ matrix.board }} -- -DZMK_CONFIG=${GITHUB_WORKSPACE}/config ${{ steps.variables.outputs.extra-cmake-args }} ${{ matrix.cmake-args }}
       - name: ${{ steps.variables.outputs.display-name }} DTS File
         if: ${{ always() }}
         run: |
