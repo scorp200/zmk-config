@@ -1,7 +1,8 @@
-on: [push, pull_request, workflow_dispatch]
-  paths:
-    - 'config/boards/cradio/**'
-    - '.github/workflows/build_cradio.yml'
+on:
+  push:
+    paths:
+      - 'config/boards/cradio/**'
+      - '.github/workflows/build_cradio.yml'
 name: Build cradio - Sweep
 
 jobs:
