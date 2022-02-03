@@ -3,7 +3,7 @@ on:
     paths:
       - 'config/boards/cradio/**'
       - '.github/workflows/build_cradio.yml'
-name: Build cradio - Sweep
+name: Build Cradio - Sweep
 
 jobs:
   matrix:
