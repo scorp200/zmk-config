@@ -1,7 +1,7 @@
 on: 
   push:
     paths:
-      - 'boards/lily58'
+      - 'boards/lily58/*'
     branches:
       - main
 
