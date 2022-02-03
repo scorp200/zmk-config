@@ -1,6 +1,9 @@
-on: [push, pull_request, workflow_dispatch]
+on: 
+  pull_request:
+    paths:
+      - 'boards/lily59'
 
-name: Build
+name: Build Lily58
 
 jobs:
   build:
