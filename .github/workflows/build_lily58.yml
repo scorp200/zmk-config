@@ -1,8 +1,8 @@
 on: 
   push:
-  branches:
+    branches:
       - main
-  paths:
+    paths:
       - 'boards/lily58'
 
 name: Build Lily58
