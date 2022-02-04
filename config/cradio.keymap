@@ -13,7 +13,7 @@
    // tapping_term_ms = <200>;
 };
 
-/ { 
+/ {
 
     combos {
         compatible = "zmk,combos";
@@ -22,123 +22,132 @@
             key-positions = <0 1>;
             bindings = <&kp ESC>;
         };
-        
+
          combo_tab {
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&kp TAB>;
         };
-        
+
             combo_ralt {
             timeout-ms = <50>;
             key-positions = <17 16>;
             bindings = <&kp RALT>;
         };
-        
+
                     combo_lalt {
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&kp LALT>;
         };
-        
+
                            combo_lgui {
             timeout-ms = <50>;
             key-positions = <12 13>;
             bindings = <&kp LGUI>;
         };
-        
-        
+
+
            combo_rgui {
             timeout-ms = <50>;
             key-positions = <17 18>;
             bindings = <&kp RGUI>;
         };
-        
 
-        
+
+
     };
 
         keymap {
                 compatible = "zmk,keymap";
-                
+
        		default_layer {
 		bindings = <
-		&kp Q      &kp W      &kp F      &kp P      &kp G 					&kp J &kp L   &kp U         &kp Y        &kp QUOT 
-		&mt LSFT A &lt 5 R    &lt 1 S    &lt 3 A    &kp D 			        &kp H &lt 4 N &lt 2 E       &lt 6 I      &mt LSFT O
-		&kp Z      &mt LCTL X &mt LALT C &kp V      &kp B				    &kp K &kp M   &mt LALT CMMA &mt LCTL DOT &kp FSLH
-          				                 &mo 1      &lt 7 SPC  		        &kp BKSP &mo 2 
+		&kp Q      &kp W      &kp F      &kp P      &kp G 					&kp J &kp L &kp U         &kp Y        &kp QUOT
+		&mt LSFT A &lt 6 R    &lt 4 S    &lt 3 T    &kp D 			        &kp H &kp N &lt 5 E       &lt 7 I      &mt LSFT O
+		&kp Z      &mt LCTL X &mt LALT C &kp V      &kp B				    &kp K &kp M &mt LALT CMMA &mt LCTL DOT &kp FSLH
+          				                 &mo 2      &lt 9 SPC  		        &kp BKSP &mo 3
 		>;
 		};
 
-       		layer_1 {
+            qwerty_layer {
 		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
+		&kp Q      &kp W      &kp E      &kp R      &kp T 					&kp Y &kp U &kp I         &kp O        &kp P
+		&mt LSFT A &lt 6 S    &lt 4 D    &lt 3 F    &kp G 			        &kp H &kp J &lt 5 K       &lt 7 L      &mt LSFT QUOT
+		&kp Z      &mt LCTL X &mt LALT C &kp V      &kp B				    &kp N &kp M &mt LALT CMMA &mt LCTL DOT &kp FSLH
+          				                 &trans     &trans  		        &trans &trans
 		>;
 		};
-		
-		    two_layer {
+
+       		layer_2 {
 		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
-		>;
-		};	
-		
-		    three_layer {
-		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
-		>;
-		};	
-        
-		    four_layer {
-		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
+		&kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT 			&kp CARET &kp AMPS  &kp ASTRK &kp LPAR &kp RPAR
+		&trans   &trans &trans   &trans   &kp LPAR 			    &kp RPAR  &kp UNDER &kp PLUS  &kp DQT  &kp COLON
+		&trans   &trans &trans   &trans   &kp LT				&kp GT 	  &trans    &trans 	  &trans   &kp BSLH
+          				         &none    &kp SPC  				&trans &trans
 		>;
 		};
-        
-		    five_layer {
+
+		    layer_3 {
 		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
-		>;
-		};	
-        
-		    fix_layer {
-		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
+		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 						&kp N6 	 &kp N7    &kp N8 	 &kp N9  &kp N0
+		&trans &trans &trans &trans &kp LBRC		        	&kp RBRC &kp MINUS &kp EQUAL &kp QST &kp PIPE
+		&trans &trans &trans &trans &kp LBKT			        &kp RBKT &trans	   &trans 	 &trans  &trans
+          				     &mo 9  &kp SPC  				    &trans   &none
 		>;
 		};
-        
-		    seven_layer {
+
+		    layer_4 {
 		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
+		&trans &trans &trans &trans &trans 						&trans &trans   &trans   &trans &trans
+		&trans &trans &none  &trans &trans 			        	&trans &kp LEFT &kp DOWN &kp UP &kp RIGHT
+		&trans &trans &trans &trans &trans				        &trans &trans   &trans   &trans &trans
+          				     &trans &trans  				    &trans &trans
 		>;
 		};
-        
-		    adjust_layer {
+
+		    layer_5 {
 		bindings = <
-		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
-		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
-		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
-          				     &trans &trans  				    &trans &trans 
+		&trans &trans &trans 		&kp LS(LC(ESC)) &trans 						&trans &trans &trans &trans &trans
+		&trans &trans &kp LG(LS(S)) &kp LA(PSCRN)	&trans 			        	&trans &none  &trans &trans &trans
+		&trans &trans &trans 		&trans 			&trans				        &trans &trans &trans &trans &trans
+          				     		&trans 			&trans 	 				    &trans &trans
+		>;
+		};
+
+		    layer_6 {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &kp LG(L) &trans &trans &trans
+		&trans &trans &trans &trans &trans 			        	&trans &trans 	 &trans &trans &kp LG(O)
+		&trans &trans &trans &trans &trans				        &trans &trans 	 &trans &trans &trans
+          				     &trans &trans  				    &trans &trans
+		>;
+		};
+
+		    layer_7 {
+		bindings = <
+		&trans &kp N7 &kp N8 &kp N9 &trans 						&trans &trans &trans &trans &trans
+		&kp N0 &kp N1 &kp N2 &kp N3 &trans 			        	&trans &trans &trans &none  &trans
+		&trans &kp N4 &kp N5 &kp N6 &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans
+		>;
+		};
+
+		    layer_8 {
+		bindings = <
+		&trans &trans &trans &kp ESC &trans 						&trans &trans &trans &trans &trans
+		&trans &trans &trans &kp RET &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans  &trans				        &trans &trans &trans &trans &trans
+          				     &trans  &trans  				    &trans &trans
+		>;
+		};
+
+		    layer_9 {
+		bindings = <
+		&to 0  &to 1  &trans &trans &trans 						&trans &kp F9 &kp F10 &kp F11 &kp F12
+		&trans &trans &trans &trans &trans 			        	&trans &kp F1 &kp F2  &kp F3  &kp F4
+		&trans &trans &trans &trans &trans				        &trans &kp F5 &kp F6  &kp F7  &kp F8
+          				     &none  &trans  				    &trans &none
 		>;
 		};
 	};
