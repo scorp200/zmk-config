@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define LA \LSFT A
-
 &mt {
   //  flavor = "tap-preferred";
    // tapping_term_ms = <200>;
@@ -66,13 +64,13 @@
        		default_layer {
 		bindings = <
 		&kp Q      &kp W      &kp F      &kp P      &kp G 					&kp J &kp L   &kp U         &kp Y        &kp QUOT 
-		&mt LA &lt 5 R    &lt 1 S    &lt 3 A    &kp D 			        &kp H &lt 4 N &lt 2 E       &lt 6 I      &mt LSFT O
+		&mt LSFT A &lt 5 R    &lt 1 S    &lt 3 A    &kp D 			        &kp H &lt 4 N &lt 2 E       &lt 6 I      &mt LSFT O
 		&kp Z      &mt LCTL X &mt LALT C &kp V      &kp B				    &kp K &kp M   &mt LALT CMMA &mt LCTL DOT &kp FSLH
           				                 &mo 1      &lt 7 SPC  		        &kp BKSP &mo 2 
 		>;
 		};
 
-       		left_layer {
+       		layer_1 {
 		bindings = <
 		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
 		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
@@ -81,7 +79,7 @@
 		>;
 		};
 		
-		    right_layer {
+		    two_layer {
 		bindings = <
 		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
 		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
@@ -90,7 +88,7 @@
 		>;
 		};	
 		
-		    tri_layer {
+		    three_layer {
 		bindings = <
 		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
 		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
@@ -99,5 +97,49 @@
 		>;
 		};	
         
+		    four_layer {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
+		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans 
+		>;
+		};
+        
+		    five_layer {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
+		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans 
+		>;
+		};	
+        
+		    fix_layer {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
+		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans 
+		>;
+		};
+        
+		    seven_layer {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
+		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans 
+		>;
+		};
+        
+		    adjust_layer {
+		bindings = <
+		&trans &trans &trans &trans &trans 						&trans &trans &trans &trans &trans 
+		&trans &trans &trans &trans &trans 			        	&trans &trans &trans &trans &trans
+		&trans &trans &trans &trans &trans				        &trans &trans &trans &trans &trans
+          				     &trans &trans  				    &trans &trans 
+		>;
+		};
 	};
 };
