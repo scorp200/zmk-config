@@ -91,7 +91,7 @@
 		    layer_3 {
 		bindings = <
 		&kp N1 &kp N2 &kp N3 &kp N4 &kp N5 						&kp N6 	 &kp N7    &kp N8 	 &kp N9  &kp N0
-		&trans &trans &trans &trans &kp LBRC		        	&kp RBRC &kp MINUS &kp EQUAL &kp QST &kp PIPE
+		&trans &trans &trans &trans &kp LBRC		        	&kp RBRC &kp MINUS &kp EQUAL &kp SQT &kp PIPE
 		&trans &trans &trans &trans &kp LBKT			        &kp RBKT &trans	   &trans 	 &trans  &trans
           				     &mo 9  &kp SPC  				    &trans   &none
 		>;
