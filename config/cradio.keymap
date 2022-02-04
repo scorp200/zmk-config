@@ -66,7 +66,7 @@
 		&kp Q      &kp W      &kp F      &kp P &kp G 					&kp J &kp L &kp U          &kp Y        &kp QUOT
 		&mt LSFT A &lt 6 R    &lt 4 S    &kp T &kp D 			        &kp H &kp N &lt 5 E        &lt 7 I      &mt LSFT O
 		&kp Z      &mt LCTL X &mt LALT C &kp V &kp B				    &kp K &kp M &mt LALT COMMA &mt LCTL DOT &kp FSLH
-          				                 &mo 2 &lt 9 SPC  		        &kp BKSP &mo 3
+          				                 &mo 2 &lt 9 SPC  		        &kp BSPC &mo 3
 		>;
 		};
 
