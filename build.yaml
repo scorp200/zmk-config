@@ -13,5 +13,6 @@
 #
 ---
 board: ["nice_nano_v2"]
-shield: ["cradio_left", "cradio_right", "lily58_left", "lily58_right", "hillside48_left", "hillside48_right"]
+#shield: ["cradio_left", "cradio_right", "lily58_left", "lily58_right", "hillside48_left", "hillside48_right"]
+shield: ["hillside48_left", "hillside48_right"]
 #include:
