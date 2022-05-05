@@ -31,6 +31,7 @@
 #define B4     BT_SEL 4
 #define POFF   ext_power EP_OFF 
 #define PON    ext_power EP_ON
+#define OTGL   out OUT_TOG
 
 &mt {
 	flavor = "tap-preferred";
@@ -110,7 +111,7 @@
                 adj_layer {
                         bindings = <
 &trans  &bt B0  &bt B1  &bt B3  &bt B4  &trans                                             &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &POFF   &PON    &trans  &trans  &trans                                             &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &POFF   &PON    &OTGL   &trans  &trans                                             &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &bt BT_CLR                         &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
                 &trans          &trans  &trans  &trans      &trans         &trans  &trans  &trans  &trans             &trans   
                         >;
