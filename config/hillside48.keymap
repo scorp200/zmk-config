@@ -21,8 +21,8 @@
 #define Cut    LC(X)
 #define Copy   LC(C)
 #define Paste  LC(V)
-#define Clip   LALT(LSHFT(S))
-#define Wind   LALT(PSCRN)
+#define Clip   LG(LS(S))
+#define Wind   LA(PSCRN)
 #define NavS   NAV_L S
 #define B0     BT_SEL 0
 #define B1     BT_SEL 1
