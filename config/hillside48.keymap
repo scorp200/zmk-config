@@ -29,8 +29,8 @@
 #define B2     BT_SEL 2
 #define B3     BT_SEL 3
 #define B4     BT_SEL 4
-#define &POFF  &ext_power EP_OFF 
-#define &PON   &ext_power EP_ON
+#define POFF   ext_power EP_OFF 
+#define PON    ext_power EP_ON
 
 &mt {
 	flavor = "tap-preferred";
