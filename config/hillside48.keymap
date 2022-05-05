@@ -76,7 +76,7 @@
 
                 higher_layer {
                         bindings = <
-&trans  &kp 1      &kp 2   &kp 3   &kp 4   &kp 5                                                 &kp 6     &kp 7      &kp 8      &kp 9    &kp 0   &trans
+&trans  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5                                                &kp N6    &kp N7     &kp N8     &kp N9   &kp N0   &trans
 &trans  &kp TILDE  &trans  &trans  &trans  &kp LBRC                                              &kp RBRC  &kp MINUS  &kp EQUAL  &kp SQT  &kp PIPE  &trans
 &trans  &trans     &trans  &trans  &trans  &kp LBKT   &trans                             &trans  &kp RBKT  &trans     &trans     &trans   &trans  &trans
                    &trans          &trans  &mo ADJ_L  &trans  &trans             &trans  &trans  &trans    &trans                &trans   
