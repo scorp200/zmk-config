@@ -13,4 +13,4 @@
 #
 ---
 board: ["nice_nano_v2"]
-shield: ["hillside48_left", "hillside48_right"]
+shield: ["hillside48_left", "hillside48_right", "chocv"]
