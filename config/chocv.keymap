@@ -19,7 +19,7 @@
 #define Wind   LA(PSCRN)
 //MacOS
 #define MClip  LS(LG(4))
-#define MWind  LS(LG(SPAC(4)))
+#define MWind  LS(LG(SPACE(4)))
 
 #define NavS   NAV_L S
 #define SpcL   SPC_L SPACE
