@@ -14,8 +14,13 @@
 #define Cut    LC(X)
 #define Copy   LC(C)
 #define Paste  LC(V)
+// Windows
 #define Clip   LG(LS(S))
 #define Wind   LA(PSCRN)
+//MacOS
+#define MClip  LS(LG(4))
+#define MWind  LS(LG(SPAC(4)))
+
 #define NavS   NAV_L S
 #define SpcL   SPC_L SPACE
 
@@ -97,7 +102,7 @@
                 func_layer {
                         bindings = <
 &trans    &trans  &trans    &trans    &trans                       &trans  &trans  &trans  &trans  &trans
-&kp LGUI  &trans  &kp Clip  &kp Wind  &trans                       &trans  &trans  &trans  &trans  &kp RGUI
+&kp LGUI  &trans  &kp MClip &kp MWind &trans                       &trans  &trans  &trans  &trans  &kp RGUI
 &kp LALT  &trans  &trans    &trans    &trans                       &trans  &trans  &trans  &trans  &kp RALT
                   &trans    &trans    &trans                       &trans  &trans  &trans   
                         >;
