@@ -19,10 +19,25 @@
 #define Wind   LA(PSCRN)
 //MacOS
 #define MClip  LS(LG(4))
-#define MWind  LS(LG(SPACE(4)))
+#define MWind  snap_window_mac
 
 #define NavS   NAV_L S
 #define SpcL   SPC_L SPACE
+
+/ {
+    macros {
+        zed_em_kay: zed_em_kay {
+            label = "ZM_snap_window_mac";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LGUI &kp LSHFT &kp SPACE>
+                , <&macro_tap &kp 4>
+                , <&macro_release &kp LGUI &kp LSHFT &kp SPACE>
+                ;
+        };
+    };
+};
 
 &mt {
 	flavor = "tap-preferred";
