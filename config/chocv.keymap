@@ -30,8 +30,9 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp LGUI &kp LSHFT &kp N4>
+                = <&macro_press &kp LGUI &kp LSHFT &kp N4>
                 , <&macro_tap &kp SPACE>
+                , <&macro_release &kp LGUI &kp LSHFT &kp N4>
                 ;
         };
     };
