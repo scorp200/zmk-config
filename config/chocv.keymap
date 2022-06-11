@@ -19,14 +19,13 @@
 #define Wind   LA(PSCRN)
 //MacOS
 #define MClip  LS(LG(4))
-#define MWind  snap_window_mac
 
 #define NavS   NAV_L S
 #define SpcL   SPC_L SPACE
 
 / {
     macros {
-        zed_em_kay: zed_em_kay {
+        snap_m: snap_m {
             label = "ZM_snap_window_mac";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -116,10 +115,10 @@
 
                 func_layer {
                         bindings = <
-&trans    &trans  &trans    &trans    &trans                       &trans  &trans  &trans  &trans  &trans
-&kp LGUI  &trans  &kp MClip &kp MWind &trans                       &trans  &trans  &trans  &trans  &kp RGUI
-&kp LALT  &trans  &trans    &trans    &trans                       &trans  &trans  &trans  &trans  &kp RALT
-                  &trans    &trans    &trans                       &trans  &trans  &trans   
+&trans    &trans  &trans    &trans   &trans                       &trans  &trans  &trans  &trans  &trans
+&kp LGUI  &trans  &kp MClip &snap_m  &trans                       &trans  &trans  &trans  &trans  &kp RGUI
+&kp LALT  &trans  &trans    &trans   &trans                       &trans  &trans  &trans  &trans  &kp RALT
+                  &trans    &trans   &trans                       &trans  &trans  &trans   
                         >;
 			
                         sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
