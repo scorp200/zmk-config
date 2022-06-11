@@ -18,7 +18,7 @@
 #define Clip   LG(LS(S))
 #define Wind   LA(PSCRN)
 //MacOS
-#define MClip  LS(LG(4))
+#define MClip  LS(LG(N4))
 
 #define NavS   NAV_L S
 #define SpcL   SPC_L SPACE
@@ -30,9 +30,8 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LGUI &kp LSHFT &kp SPACE>
-                , <&macro_tap &kp N4>
-                , <&macro_release &kp LGUI &kp LSHFT &kp SPACE>
+                = <&macro_tap &kp LGUI &kp LSHFT &kp N4>
+                , <&macro_tap &kp SPACE>
                 ;
         };
     };
