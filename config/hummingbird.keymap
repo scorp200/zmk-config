@@ -83,9 +83,8 @@
 
     ZMK_MACRO(wclip,
         wait-ms = <0>;
-        tap-ms = <0>;
-        bindings = <&kp LGUI &kp LSHFT &kp S>;
-    )
+        tap-ms = <40>;
+        bindings = <&kp LGUI &kp LSHFT &kp S>;)
 
     combos {
         compatible = "zmk,combos";
