@@ -40,6 +40,15 @@
         , <&macro_press &mo UPP_L>
         , <&macro_pause_for_release>
         , <&macro_release &mo UPP_L>;)
+
+    ZMK_MACRO(wclip,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings 
+        = <&macro_press &kp LGUI>
+        , <&macro_press &kp LSHFT>
+        , <&macro_press &kp S>
+        , <&macro_release &kp LGUI &kp LSHFT &kp S>;)
         
     combos {
         compatible = "zmk,combos";
@@ -62,8 +71,15 @@
         COMBO(lower_q, &kp Q, 0 1, DEF_L)
         COMBO(upper_q, &kp LS(Q), 0 1, UPP_L)
         
-        COMBO(lower_semi, &kp SEMI, 17 16, DEF_L)
-        COMBO(upper_semi, &kp LS(SEMI), 17 16, UPP_L)
+        COMBO(lower_semi, &kp SEMI, 16 17, DEF_L)
+        COMBO(upper_semi, &kp LS(SEMI), 16 17, UPP_L)
+        
+        // Brackets
+        
+        // Convenience
+        COMBO(esc, &kp ESC, 1 2, DEF_L)
+        COMBO(ent, &kp ENTER, 21 22, DEF_L)
+        COMBO(w_clip, &wclip, 5 6 7, DEF_L)
     };
 
     keymap {
@@ -76,7 +92,7 @@
              &kp A         &kp R         &kp S         &kp T         &kp D             &kp H         &kp N         &kp E         &kp I         &kp O
              &kp Z         &kp X         &kp C         &kp V         &kp B             &kp K         &kp M         &kp COMMA     &kp DOT       &kp SLASH
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &trans        &kp SPACE         &mo_upp       &trans
+                                                       &mo_nav       &kp SPACE         &mo_upp       &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
