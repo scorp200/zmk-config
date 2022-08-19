@@ -173,11 +173,11 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &none         &none         &none         &none             &none         &none         &none         &none
-             &kp COLON     &none         &none         &none         &none             &none         &none         &none         &none         &none
-             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+                           &kp EXCL      &kp AT        &kp HASH      &kp PRCNT         &neq          &leq          &eq           &geq
+             &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &none         &none         &none         &none         &kp PIPE
+             &kp SQT       &kp GRAVE     &none         &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &none         &none             &none         &none
+                                                       &kp UNDER     &kp MINUS         &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
