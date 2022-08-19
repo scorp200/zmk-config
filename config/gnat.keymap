@@ -119,6 +119,14 @@
         COMBO(w_clip, &wclip, 9 10 11, DEF_L)
     };
 
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <UPP_L SYM_L>;
+            then-layer = <NUM_L>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -129,7 +137,7 @@
              &kp A         &kp R         &kp S         &kp T         &kp D             &kp H         &kp N         &kp E         &kp I         &kp O
              &kp Z         &kp X         &kp C         &kp V         &kp B             &kp K         &kp M         &kp COMMA     &kp DOT       &kp FSLH
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &mo_nav       &kp SPACE         &mo_upp       &trans
+                                                       &mo_nav       &kp SPACE         &mo_upp       &mo_sym
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
