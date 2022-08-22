@@ -110,7 +110,7 @@
         COMBO(lower_semi, &kp SEMI, 6 7, DEF_L)
         COMBO(upper_semi, &kp LS(SEMI), 6 7, UPP_L)
         
-        COMBO(f12, &kp F12, 6 7, SYS_L)
+        COMBO(f_12, &kp F12, 6 7, SYS_L)
         
         // Brackets
         COMBO(left_bracket, &kp LBKT, 0 9, DEF_L UPP_L SYM_L NUM_L)
