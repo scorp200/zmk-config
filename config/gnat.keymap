@@ -125,6 +125,8 @@
         COMBO(ent, &kp ENTER, 15 16, DEF_L)
         COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(w_clip, &wclip, 9 10 11, DEF_L)
+
+        COMBO(sys_l, &mo_sys, 28 29, NUM_L)
     };
 
     conditional_layers {
@@ -184,7 +186,7 @@
              &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &arrwf        &none         &none         &none         &kp PIPE
              &kp SQT       &kp GRAVE     &none         &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp UNDER     &kp MINUS         &none         &none
+                                                       &kp UNDER     &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
@@ -197,7 +199,7 @@
              &none         &kp N1        &kp N2        &kp N3        &none             &none         &none         &none         &none         &none
              &none         &kp N4        &kp N5        &kp N6        &none             &none         &none         &none         &none         &none
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
-                                                       &kp N0        &none             &none         &none
+                                                       &kp N0        &kp SPACE         &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
             >;
         };
