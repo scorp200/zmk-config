@@ -105,6 +105,8 @@
         COMBO(lower_semi, &kp SEMI, 6 7, DEF_L)
         COMBO(upper_semi, &kp LS(SEMI), 6 7, UPP_L)
         
+        COMBO(f12, &kp F12, 6 7, SYS_L)
+        
         // Brackets
         COMBO(left_bracket, &kp LBKT, 0 9, DEF_L UPP_L SYM_L NUM_L)
         COMBO(right_bracket, &kp RBKT, 7 16, DEF_L UPP_L SYM_L NUM_L)
@@ -116,6 +118,7 @@
         // Convenience
         COMBO(esc, &kp ESC, 1 2, DEF_L)
         COMBO(ent, &kp ENTER, 15 16, DEF_L)
+        COMBO(tab, &kp TAB, 11 12, DEF_L)
         COMBO(w_clip, &wclip, 9 10 11, DEF_L)
     };
 
@@ -214,9 +217,9 @@
             label = "";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &none         &none         &none         &none             &none         &none         &none         &none
-             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
-             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+                           &none         &none         &none         &none             &none         &kp F9        &kp F10       &kp F11
+             &none         &none         &none         &none         &none             &none         &kp F1        &kp F2        &kp F3        &kp F4 
+             &none         &none         &none         &none         &none             &none         &kp F5        &kp F6        &kp F7        &kp F8 
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &none         &none             &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
