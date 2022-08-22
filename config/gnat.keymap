@@ -72,6 +72,11 @@
         tap-ms = <40>;
         bindings = <&kp EXCL &kp EQUAL>;)
 
+    ZMK_MACRO(arrwf,
+        wait-ms = <30>;
+        tap-ms = <40>;
+        bindings = <&kp EQUAL &kp GT>;)
+
     ZMK_MACRO(wclip,
         wait-ms = <30>;
         tap-ms = <40>;
@@ -175,8 +180,8 @@
             label = "Sym";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &kp EXCL      &kp AT        &kp HASH      &kp PRCNT         &neq          &leq          &eq           &geq
-             &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &none         &none         &none         &none         &kp PIPE
+                           &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &neq          &leq          &eq           &geq
+             &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &arrwf        &none         &none         &none         &kp PIPE
              &kp SQT       &kp GRAVE     &none         &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp UNDER     &kp MINUS         &none         &none
