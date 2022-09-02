@@ -17,6 +17,11 @@
 #define NUM_L 4
 #define SYS_L 5
 
+#define B0     BT_SEL 0
+#define B1     BT_SEL 1
+#define B2     BT_SEL 2
+#define B3     BT_SEL 3
+#define B4     BT_SEL 4
 #define OTGL   out OUT_TOG
 
 &caps_word {
