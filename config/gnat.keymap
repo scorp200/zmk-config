@@ -17,6 +17,8 @@
 #define NUM_L 4
 #define SYS_L 5
 
+#define OTGL   out OUT_TOG
+
 &caps_word {
   continue-list = <UNDERSCORE MINUS BACKSPACE>;
 };
@@ -196,7 +198,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &neq          &leq          &eq           &geq
              &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &arrwf        &none         &none         &none         &kp PIPE
-             &kp SQT       &kp GRAVE     &none         &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
+             &kp SQT       &kp GRAVE     &kp TILDE     &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp UNDER     &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
@@ -220,9 +222,9 @@
             label = "Sys";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &none         &none         &none         &none             &none         &none         &none         &none
-             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
-             &none         &none         &none         &none         &none             &none         &none         &none         &none         &none
+                           &OTGL         &none         &none         &none             &none         &kp F9        &kp F10       &kp F11
+             &none         &bt B0        &bt B1        &bt B2        &none             &none         &kp F1        &kp F2        &kp F3        &kp F4 
+             &none         &bt B3        &bt B4        &none         &none             &none         &kp F5        &kp F6        &kp F7        &kp F8 
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &none         &none             &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
