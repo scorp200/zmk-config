@@ -203,7 +203,7 @@
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
                            &kp AT        &kp HASH      &kp DLLR      &kp PRCNT         &neq          &leq          &eq           &geq
              &kp COLON     &kp CARET     &kp AMPS      &kp STAR      &kp PLUS          &arrwf        &none         &none         &none         &kp PIPE
-             &kp SQT       &kp GRAVE     &kp TILDE     &none         &kp EQUAL         &none         &none         &none         &none         &kp DQT
+             &kp SQT       &kp GRAVE     &kp TILDE     &kp BSLH      &kp EQUAL         &none         &none         &none         &none         &kp DQT
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &kp UNDER     &kp MINUS         &trans        &trans
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
