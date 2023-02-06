@@ -100,8 +100,8 @@
         bindings 
         = <&macro_press &kp LGUI>
         , <&macro_press &kp LSHFT>
-        , <&macro_press &kp N4>
-        , <&macro_release &kp LGUI &kp LSHFT &kp N4>;)
+        , <&macro_press &kp S>
+        , <&macro_release &kp LGUI &kp LSHFT &kp S>;)
         
     combos {
         compatible = "zmk,combos";
