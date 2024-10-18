@@ -18,4 +18,4 @@
 # shield: ["gnat_left", "gnat_right"]
 # shield: ["hillside49_left", "hillside48_right", "chocv", "tern"]
 board: ["seeeduino_xiao_ble"]
-shield: ["tern"]
+shield: ["rufous"]
