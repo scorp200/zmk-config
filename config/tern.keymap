@@ -5,8 +5,6 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -234,9 +232,9 @@
             label = "Sys";
             bindings = <
         // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                           &OTGL         &none         &none         &none             &none         &kp F9        &kp F10       &kp F11
-             &none         &bt B0        &bt B1        &bt B2        &none             &none         &kp F1        &kp F2        &kp F3        &kp F4 
-             &none         &bt B3        &bt B4        &none                                         &kp F5        &kp F6        &kp F7        &kp F8 
+                           &none         &none         &none         &none             &none         &kp F9        &kp F10       &kp F11
+             &none         &none         &none         &none         &none             &none         &kp F1        &kp F2        &kp F3        &kp F4 
+             &none         &none         &none         &none                                         &kp F5        &kp F6        &kp F7        &kp F8 
         // ╰─────────────┴─────────────┴─────────────╮                                                           ╭─────────────┴─────────────┴─────────────╯
                                                        &none         &none             &none         &none
         //                                           ╰─────────────┴─────────────╯   ╰─────────────┴─────────────╯
